@@ -1,15 +1,15 @@
 {
-    "name": "My First PWA",
-    "short_name": "My PWA",
-    "description": "Aplikasi PWA pertama saya",
+    "name": "Submission 1 PWA",
+    "short_name": "PWA",
+    "description": "Submission 1 PWA Dicoding",
     "start_url": "/index.html",
     "display": "standalone",
-    "background_color": "#00897B",
-    "theme_color": "#00897B",
+    "background_color": "#00eeff",
+    "theme_color": "#008cff",
     "icons": [
         {
             "src": "icon.png",
-            "sizes": "512x512",
+            "sizes": "112x112",
             "type": "image/png"
         }
     ]
