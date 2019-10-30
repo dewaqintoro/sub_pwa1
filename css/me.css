@@ -1,3 +1,144 @@
-.nav1 {
-    background: red;
+nav.nav-center ul {
+    text-align: center;
+} 
+nav.nav-center ul li {
+    display: inline;
+    float: none;
+}
+nav.nav-center ul li a {
+    display: inline-block;
+}
+
+nav.sidenav {
+    text-align: left;
+    float: left;
+}
+
+nav .nav-wrapper {
+    position: relative;
+    height: 100%;
+    background: white;
+}
+
+nav .brand-logo{
+  color: red;
+}
+
+#menu li{
+  list-style: none;
+  display: inline-block;
+  width: 9em;
+  text-align: center;
+  border-right: 9px;
+}
+#menu li a{
+  text-decoration: none;
+  position: relative;
+  color: black;
+  font-size: 22px;
+  font-weight: 700;
+  font-family: sans-serif;
+  display: block;
+  overflow: hidden;
+  transition: 0.7s all;
+  padding: 0px 30px;
+  text-transform: uppercase;
+}
+#menu li a:before{
+  content: '';
+  width: 60px;
+  position: absolute;
+  border-bottom: 8px solid #313131;
+  bottom: 0;
+  right: 350px;
+  transition: 0.7s all;
+}
+
+#menu li a:hover:before{
+  right: 0;
+}
+#menu li a:hover{
+  color: white;
+}
+
+a.apple{
+    background: #0097A7;
+}
+a.apple:hover{
+    background: #43A047;
+}
+
+a.oppo{
+    background: #00ACC1;
+}
+a.oppo:hover{
+    background: #4CAF50;
+}
+
+a.xiaomi{
+    background: #00BCD4;
+}
+a.xiaomi:hover{
+    background: #66BB6A;
+}
+
+a.huawei{
+    background: #26C6DA;
+}
+a.huawei:hover{
+    background: #81C784;
+}
+
+a.vivo{
+    background: #4DD0E1;
+}
+a.vivo:hover{
+    background: #A5D6A7;
+}
+
+nav a.sidenav-trigger {
+    color: black;
+}
+
+
+
+
+
+
+
+/* recipe styles */
+.recipes{
+  margin-top: 20px;
+}
+.card-panel.recipe{
+  border-radius: 8px;
+  padding: 10px;
+  box-shadow: 0px 1px 3px rgba(90,90,90,0.1);
+  display: grid;
+  grid-template-columns: 2fr 6fr 1fr;
+  grid-template-areas: "image details delete";
+  position: relative;
+}
+.recipe img{
+  grid-area: image;
+  max-width: 60px;
+}
+.recipe-details{
+  grid-area: details;
+  margin-top: 6px;
+}
+.recipe-delete{
+  grid-area: delete;
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+}
+.recipe-delete i{
+  font-size: 18px;
+}
+.recipe-title{
+  font-weight: bold;
+}
+.recipe-ingredients{
+  font-size: 0.8em;
 }
